@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <h1>Contacto</h1>
+
+    <form method="post" action="/Homework">
+        <fieldset>
+            <legend><h2>Informacion Personal</h2></legend>
+
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="nombre" placeholder="Fatima Jimenez" required>
+        </div>
+        <br>
+        <div>
+            <label for="correo">Email:</label>
+            <input type="email" id="correo" name="Email" placeholder="Fatimita170804@gmail.com" required>
+        </div>
+        <br>
+        </fieldset>
+
+        <fieldset>
+
+            <legend><h2>Informacion Adicional</h2></legend>
+
+                <label for="numero">Telefono:</label>
+                <input type="tel" id="numero" name="Telefono" placeholder="3323489800" required>
+                <br>               
+
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Otros</h4></legend>
+
+            <div>
+                <label for="why"><b>Por que quieres contactar?</b></label>
+                <select name="why" id="why">
+                    <option value="1">Duda</option>
+                    <option value="2">Quiero registrarme</option>
+                    <option value="3">Opciones de pago</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="terms"><b>Aceptas los terminos y condiciones?</b></label>
+                <input type="checkbox" id="terms" name="terms" required>
+            </div>
+
+            <div>
+                <datalist id="opening">
+                    <option value="Apertura Inglesa"></option>
+                    <option value="Apertura Italiana"></option>
+                    <option value="Apertura Española"></option>
+                </datalist>
+                <label><b>Con que apertura quieres que te ayude?</b>
+                    <input list="opening" name="opening">
+                </label>
+            </div>
+
+            <!--Botones de Radio-->
+
+            <b>Que prefieres mas?</b>
+            <label for="linea">
+                <input id="linea" type="radio" name="tablero-linea" value="linea">Ajedrez en linea
+            </label>
+            <label for="tablero">
+                <input id="tablero" type="radio" name="tablero-linea" value="tablero">Ajedrez en el tablero
+            </label>
+
+            <div>
+                    <label><b>A que hora sueles jugar ajedrez</b></label>
+                <br>
+                    <label for="mañana">
+                        <input id="mañana" type="checkbox" name="tiempos" checked value="mañana"> 8 am - 12 pm
+                    </label>
+                    <br>
+                    <label for="tarde">
+                        <input id="tarde" type="checkbox" name="tiempos" checked value="tarde"> 12 pm - 4 pm
+                    </label>
+                    <br>
+                    <label for="tarde-noche">
+                        <input id="tarde-noche" type="checkbox" name="tiempos" value="tarde-noche"> 4 pm - 8 pm
+                    </label>
+                    <br>
+                    <label for="noche">
+                        <input id="noche" type="checkbox" name="tiempos" value="noche"> 8 pm - 12 am
+                    </label>
+            <br>
+        </div>
+            
+        </fieldset>
+
+        <br>
+        <button type="submit">Enviar el formulario</button>
+        
+    </form>
+
+    <br>
+
+    <footer>
+        
+        <small>
+        <a href="index.html">De regreso</a><br>
+        <a href="mailto:veec980326@gmail.com">Envia un correo</a><br>
+        <a href="whatsapp://send?text=Hola, estoy interesado tel:+523323489800">Mandanos un whatspp</a><br>
+        </small>
+
+    </footer>
+    
+</body>
+</html>
